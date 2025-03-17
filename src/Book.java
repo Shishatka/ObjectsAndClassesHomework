@@ -25,4 +25,12 @@ public class Book {
     public void setYearOfPublication(int year) {
         this.yearOfPublication = year;
     }
+
+    public String toString() {
+        return getAuthor() +  ", " + getName() + ", " + getYearOfPublication();
+    }
+
+    /*public boolean equals(Book book) {
+
+    }*/
 }

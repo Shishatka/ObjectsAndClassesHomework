@@ -8,5 +8,11 @@ public class Main {
         Book bookB = new Book("Crime and Punishment", FyodorDosoevsky, 1860);
         bookB.setYearOfPublication(1866);
         System.out.println(bookB.getYearOfPublication());
+
+        Author FyodorDosoevsky2 = new Author("Fyodor", "Dostoevsky");
+
+        FyodorDosoevsky.equals(LeoTolstoy);
+        System.out.println(FyodorDosoevsky.hashCode());
+
     }
 }
