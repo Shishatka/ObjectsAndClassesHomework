@@ -6,6 +6,8 @@ public class Main {
         Author FyodorDosoevsky = new Author("Fyodor", "Dostoevsky");
         Book bookA = new Book("War and Peace", LeoTolstoy, 1867);
         Book bookB = new Book("Crime and Punishment", FyodorDosoevsky, 1860);
+        Book bookC = new Book("War and Peace", LeoTolstoy, 1867);
+
         bookB.setYearOfPublication(1866);
         System.out.println(bookB.getYearOfPublication());
 
@@ -13,6 +15,7 @@ public class Main {
 
         FyodorDosoevsky.equals(LeoTolstoy);
         System.out.println(FyodorDosoevsky.hashCode());
+        System.out.println(bookA.equals(bookC));
 
     }
 }
