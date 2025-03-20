@@ -29,7 +29,7 @@ public class Book {
     }
 
     public String toString() {
-        return getAuthor() +  ", " + getName() + ", " + getYearOfPublication();
+        return author +  ", " + name + ", " + yearOfPublication;
     }
 
     public boolean equals(Book book) {
@@ -37,6 +37,6 @@ public class Book {
     }
 
     public int hashCode() {
-        return java.util.Objects.hash(this.toString());
+        return java.util.Objects.hash(this);
     }
 }
