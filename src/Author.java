@@ -20,8 +20,9 @@ public class Author {
         return "Имя - " + firstName + ". Фамлия -" + lastName;
     }
 
+    @Override
     public boolean equals(Author author) {
-        if (author.equals(this)) {
+        if (author.getFirstName().equals(this.getFirstName()) && author.getLastName().equals(this.getLastName())) {
             //System.out.println("Автор один и тот же");
             return true;
         } else {
@@ -30,6 +31,6 @@ public class Author {
         }
     }
     public int hashCode() {
-        return java.util.Objects.hash(this);
+        return java.util.Objects.hash(firstName, lastName);
     }
 }
