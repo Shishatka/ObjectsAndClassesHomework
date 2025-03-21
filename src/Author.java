@@ -20,7 +20,6 @@ public class Author {
         return "Имя - " + firstName + ". Фамлия -" + lastName;
     }
 
-    @Override
     public boolean equals(Author author) {
         if (author.getFirstName().equals(this.getFirstName()) && author.getLastName().equals(this.getLastName())) {
             //System.out.println("Автор один и тот же");
