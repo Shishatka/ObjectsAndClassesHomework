@@ -32,8 +32,9 @@ public class Book {
         return author +  ", " + name + ", " + yearOfPublication;
     }
 
-
-    public boolean equals(Book book) {
+    @Override
+    public boolean equals(Object ob) {
+        Book book = (Book) ob;
         return this.name.equals(book.name) && this.author.equals(book.author) && this.yearOfPublication == book.yearOfPublication;
     }
 
