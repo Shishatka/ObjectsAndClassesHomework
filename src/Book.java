@@ -32,11 +32,12 @@ public class Book {
         return author +  ", " + name + ", " + yearOfPublication;
     }
 
+
     public boolean equals(Book book) {
-        return this.toString().equals(book.toString());
+        return this.name.equals(book.name) && this.author.equals(book.author) && this.yearOfPublication == book.yearOfPublication;
     }
 
     public int hashCode() {
-        return java.util.Objects.hash(this);
+        return java.util.Objects.hash(name, author, yearOfPublication);
     }
 }
